@@ -132,22 +132,23 @@
 						<form name="wedding-rsvp" method="POST" data-netlify="true">
 							<div class="fields">
 								<div class="field">
-									<label for="userInputEmail">Your Email</label>
-									<input type="email" id="userInputEmail" aria-describedby="emailHelp"/>
+									<label>Your Email</label>
+									<input type="email" name="userInputEmail"/>
 								</div>
 								<div class="field">
-									<label for="userInputName">Your Full Name</label>
-									<input type="text" id="userInputName" aria-describedby="nameHelp"/>									
+									<label>Your Full Name</label>
+									<input type="text" name="userInputName"/>									
 								</div>
 								<div class="field">
-									<select class="form-select" aria-label="RSVP">
+									
+									<select class="form-select" name="attendance">
 										<option selected>Will you be attending</option>
 										<option value="yes">Count me in!</option>
 										<option value="no">Sadly, I cannot make it.</option>                
 									</select>
 								</div>
 								<div class="field">
-									<select class="form-select" aria-label="Food Preference">
+									<select class="form-select" name="food">
 										<option selected>Food Preference</option>
 										<option value="pork">Smoked Pork Ribs</option>
 										<option value="chicken">Chicken</option>
@@ -156,7 +157,7 @@
 									</select>
 								</div>
 								<div class="field">
-									<select class="form-select" aria-label="What do you prefer for lodging?">
+									<select class="form-select" name="accommodation">
 										<option selected>Accommodation preference</option>
 										<option value="camp">I can camp</option>
 										<option value="bnb">Airbnb/BnB</option>
